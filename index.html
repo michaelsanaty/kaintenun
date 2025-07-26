@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenun Nusantara - Kain Tradisional Berkualitas Tinggi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+        
+        :root {
+            --primary: #8B5A2B;
+            --secondary: #b3a581;
+            --accent: #583007;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(58, 45, 45, 0.5)), url('https://placehold.co/1920x1080/8B5A2B/FFFFFF?text=Tenun+Nusantara') center/cover;
+        }
+        
+        .pattern-bg {
+            background-image: url('https://placehold.co/100/8B5A2B/FFFFFF?text=Pattern');
+            background-size: 30px 30px;
+            background-repeat: repeat;
+            background-attachment: fixed;
+        }
+        
+        .gallery-item {
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .testimonial-card {
+            background-color: rgba(209, 154, 154, 0.9);
+        }
+        
+        .text-primary {
+            color: var(--primary);
+        }
+        
+        .bg-primary {
+            background-color: var(--primary);
+        }
+        
+        .bg-secondary {
+            background-color: var(--secondary);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+<header class="fixed w-full z-50 shadow-lg border-b border-gray-300"
+        style="background-image: url('header_pattern.png');
+               background-size: 100px 100px;
+               background-repeat: repeat;
+               background-color: rgba(255, 255, 255, 0.85);
+               backdrop-filter: blur(8px);
+               -webkit-backdrop-filter: blur(8px);">
+    <nav class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="logo.jpg" alt="Logo Tenun Nusantara - Desain lingkaran dengan motif tenun tradisional berwarna coklat dan emas" class="h-16 w-16 rounded-full">
+                <div class="ml-4">
+                    <h1 class="text-2xl font-bold text-primary">Tenun Nusantara</h1>
+                    <p class="text-sm text-gray-600">Warisan Budaya Berkualitas</p>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-800 hover:text-primary font-medium">Beranda</a>
+                <a href="#about" class="text-gray-800 hover:text-primary font-medium">Tentang</a>
+                <a href="#products" class="text-gray-800 hover:text-primary font-medium">Produk</a>
+                <a href="#gallery" class="text-gray-800 hover:text-primary font-medium">Galeri</a>
+                <a href="#contact" class="text-gray-800 hover:text-primary font-medium">Kontak</a>
+            </div>
+            
+            <button class="md:hidden text-gray-800 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="home"
+    class="hero text-white min-h-screen flex items-center justify-center pt-20 bg-cover bg-center bg-no-repeat relative"
+    style="background-image: url('bg.png');">
+    
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 container mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 drop-shadow-lg">Keindahan Tenun Nusantara</h1>
+        <p class="text-xl md:text-2xl mb-8 drop-shadow-md">Melestarikan Keindahan Tradisional dalam Setiap Helai Benang</p>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="#products"
+                class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-full font-semibold text-lg transition-all shadow-lg">Lihat Produk</a>
+            <a href="#about"
+                class="bg-white hover:bg-gray-100 text-amber-700 px-8 py-3 rounded-full font-semibold text-lg transition-all shadow-lg">Tentang Kami</a>
+        </div>
+    </div>
+</section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary">Tentang Kami</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="max-w-2xl mx-auto">Tenun Nusantara adalah perusahaan yang berdedikasi untuk melestarikan dan mempromosikan kain tenun tradisional Indonesia dengan kualitas terbaik.</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <img src="bagraound.jpg" alt="Pengrajin sedang menenun kain tradisional di alat tenun tradisional dengan latar belakang kayu alami" class="rounded-lg shadow-xl">
+                </div>
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Melestarikan Warisan Budaya</h3>
+                    <p class="mb-4">Didirikan pada tahun 1995, Tenun Nusantara dimulai dari sebuah bengkel kecil di Malang dengan dua orang pengrajin. Kini kami telah berkembang menjadi salah satu produsen tenun khas Indonesia terkemuka.</p>
+                    <p class="mb-6">Kami bekerja sama dengan lebih dari 200 pengrajin tradisional dari berbagai daerah di Indonesia untuk memproduksi kain tenun berkualitas tinggi dengan motif autentik.</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-secondary p-6 rounded-lg">
+                            <div class="flex items-center mb-3">
+                                <div class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                                    <i class="fas fa-medal"></i>
+                                </div>
+                                <h4 class="font-bold">Kualitas Terbaik</h4>
+                            </div>
+                            <p>Menggunakan bahan baku pilihan dan teknik tenun tradisional yang telah diwariskan turun-temurun.</p>
+                        </div>
+                        
+                        <div class="bg-secondary p-6 rounded-lg">
+                            <div class="flex items-center mb-3">
+                                <div class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <h4 class="font-bold">Ramah Lingkungan</h4>
+                            </div>
+                            <p>Menggunakan pewarna alami dan proses produksi yang berkelanjutan untuk mendukung lingkungan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-secondary">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary">Produk Kami</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="max-w-2xl mx-auto">Koleksi kain tenun tradisional dari berbagai daerah di Indonesia dengan beragam motif dan warna.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-all hover:shadow-xl">
+                    <img src="1.jpg" alt="Kain tenun ikat dengan motif geometris berwarna coklat dan hitam dengan detail emas" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Tenun Ikat NTT</h3>
+                        <p class="text-gray-600 mb-4">Kain tenun tradisional dari Nusa Tenggara Timur dengan motif ikat yang khas.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-primary">Rp 1.250.000</span>
+                            <button class="bg-primary text-white px-4 py-2 rounded hover:bg-opacity-90 transition-all">Detail</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-all hover:shadow-xl">
+                    <img src="2.jpg" alt="Kain songket mewah dengan benang emas membentuk pola floral kompleks di atas latar merah marun" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Tenun Ikat Toraja</h3>
+                        <p class="text-gray-600 mb-4">Tenun dengan motif khas yang penuh makna dan budaya yang mencerminkan identitas etnis Toraja.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-primary">Rp 2.800.000</span>
+                            <button class="bg-primary text-white px-4 py-2 rounded hover:bg-opacity-90 transition-all">Detail</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-all hover:shadow-xl">
+                    <img src="3.jpg" alt="Kain lurik berwarna coklat dan krem dengan garis-garis vertikal klasik" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Tenun Ikat Sumba</h3>
+                        <p class="text-gray-600 mb-4">kain tenun yang dibuat secara manual dengan teknik pewarnaan alami, menampilkan simbol-simbol yang kaya akan nilai tradisi.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-primary">Rp 850.000</span>
+                            <button class="bg-primary text-white px-4 py-2 rounded hover:bg-opacity-90 transition-all">Detail</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-primary text-white px-8 py-3 rounded-full font-medium hover:bg-opacity-90 transition-all">Lihat Semua Produk</a>
+            </div>
+        </div>
+    </section>
+
+   <section class="py-20 bg-cover bg-center bg-no-repeat" style="background-image: url('12.jpg');">
+    <div class="container mx-auto px-6 bg-white bg-opacity-80 rounded-lg py-10">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary">Proses Pembuatan</h2>
+            <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+            <p class="max-w-2xl mx-auto">Setiap lembar kain tenun kami dibuat dengan penuh dedikasi dan mengikuti proses tradisional.</p>
+        </div>
+
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold">1</span>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-primary">Pemilihan Bahan</h3>
+                    <p>Memilih benang kapas dan sutra berkualitas tinggi serta pewarna alami terbaik.</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold">2</span>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-primary">Pewarnaan</h3>
+                    <p>Proses pewarnaan menggunakan bahan alami seperti kulit kayu, daun, dan akar tanaman.</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold">3</span>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-primary">Penenunan</h3>
+                    <p>Penenunan dilakukan secara manual dengan alat tenun tradisional oleh pengrajin ahli.</p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold">4</span>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-primary">Penyempurnaan</h3>
+                    <p>Pemeriksaan kualitas dan penyempurnaan akhir sebelum siap dipasarkan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary">Galeri Karya</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="max-w-2xl mx-auto">Koleksi karya terbaik kami yang telah menghiasi berbagai acara dan dipakai oleh tokoh ternama.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="gallery-item rounded-lg overflow-hidden">
+                    <img src="model.jpg" alt="Model wanita mengenakan gaun modern dari kain tenun ikat Bali dengan warna tanah" class="w-full h-full object-cover">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden">
+                    <img src="artis.jpg" alt="Close-up detail motif tenun songket dengan benang emas yang rumit dan presisi" class="w-full h-full object-cover">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden">
+                    <img src="pengrajin.jpg" alt="Pengrajin tua sedang bekerja di alat tenun di sebuah rumah tradisional " class="w-full h-full object-cover">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden">
+                    <img src="model4.jpg" alt="Berbagai produk fashion seperti syal, tas, dan dompet dari bahan tenun yang disusun artistik" class="w-full h-full object-cover">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden">
+                    <img src="modelpria.jpg" alt="Pria berbaju modern dari kain tenun lurik Jawa dalam foto studio profesional" class="w-full h-full object-cover">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden">
+                    <img src="adat.jpg" alt="Penari tradisional Bali mengenakan kostum dari kain tenun dalam pentas budaya" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary">Apa Kata Mereka</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="max-w-2xl mx-auto">Testimonial dari klien dan pelanggan kami yang puas dengan produk tenun tradisional kami.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="penguji1.png" alt="Potret pelanggan wanita dengan senyum ramah mengenakan selendang tenun" class="w-12 h-12 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="font-bold">Wulan Sari</h4>
+                            <p class="text-sm text-gray-600">Desainer Mode</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Kualitas tenun dari Tenun Nusantara sungguh luar biasa. Motifnya autentik dan bahannya nyaman dipakai. Klien saya selalu memuji koleksi yang menggunakan bahan dari mereka."</p>
+                    <div class="flex mt-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="penguji2.png" alt="Potret eksekutif pria berjas dengan dasi bermotif tenun tradisional" class="w-12 h-12 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="font-bold">Andre R.</h4>
+                            <p class="text-sm text-gray-600">Eksekutif</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Saya sering memesan kain tenun sebagai cenderamata untuk klien asing. Mereka sangat menghargai nilai seni dan budaya dalam setiap helai kain dari Tenun Nusantara."</p>
+                    <div class="flex mt-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="penguji3.png" alt="Potret wanita paruh baya dengan kain tenun di pundak tersenyum ramah" class="w-12 h-12 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="font-bold">Dewi M.</h4>
+                            <p class="text-sm text-gray-600">Kolektor</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Sebagai kolektor kain tradisional, saya sangat menghargai keaslian dan detail yang dijaga oleh Tenun Nusantara. Pengiriman cepat dan kemasan rapi."</p>
+                    <div class="flex mt-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star-half-alt text-yellow-400"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Hubungi Kami</h2>
+                    <p class="mb-8">Kami siap membantu Anda untuk informasi lebih lanjut mengenai produk dan layanan kami.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-white bg-opacity-20 rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Kantor Pusat</h4>
+                                <p>Jl. Seokarno No. 123, Malang, Jawa Timur, Indonesia</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-white bg-opacity-20 rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Telepon</h4>
+                                <p>+62 271 2345678</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-white bg-opacity-20 rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Email</h4>
+                                <p>@tenunnusantara.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-white bg-opacity-20 rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Jam Operasional</h4>
+                                <p>Senin - Jumat: 09.00 - 17.00 WIB</p>
+                                <p>Sabtu: 09.00 - 14.00 WIB</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-4 mt-8">
+                        <a href="#" class="bg-white text-primary w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-100">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-white text-primary w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-100">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-white text-primary w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-100">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-white rounded-lg shadow-lg p-8 text-gray-800">
+                        <h3 class="text-2xl font-bold mb-6 text-primary">Kirim Pesan</h3>
+                        <form>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 font-medium mb-2">Nama Anda</label>
+                                <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label class="block text-gray-700 font-medium mb-2">Email</label>
+                                <input type="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label class="block text-gray-700 font-medium mb-2">Subjek</label>
+                                <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label class="block text-gray-700 font-medium mb-2">Pesan</label>
+                                <textarea rows="5" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-opacity-90 w-full">Kirim Pesan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <img src="logo.jpg" alt="Logo kecil Tenun Nusantara versi monokrom untuk footer website" class="h-10 w-10 rounded-full">
+                        <h3 class="text-xl font-bold ml-3">Tenun Nusantara</h3>
+                    </div>
+                    <p>Melestarikan dan mengembangkan warisan tenun tradisional Indonesia dengan kualitas tertinggi dan nilai-nilai budaya yang autentik.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Tautan Cepat</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="hover:text-secondary transition-all">Beranda</a></li>
+                        <li><a href="#about" class="hover:text-secondary transition-all">Tentang Kami</a></li>
+                        <li><a href="#products" class="hover:text-secondary transition-all">Produk</a></li>
+                        <li><a href="#gallery" class="hover:text-secondary transition-all">Galeri</a></li>
+                        <li><a href="#contact" class="hover:text-secondary transition-all">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Produk</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:text-secondary transition-all">Tenun Ikat</a></li>
+                        <li><a href="#" class="hover:text-secondary transition-all">Tenun Ikat Toraja</a></li>
+                        <li><a href="#" class="hover:text-secondary transition-all">Tenun Ikat Ntt</a></li>
+                        <li><a href="#" class="hover:text-secondary transition-all">Tenun Bebas</a></li>
+                        <li><a href="#" class="hover:text-secondary transition-all">Produk Fashion</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Berlangganan</h4>
+                    <p>Berlangganan newsletter kami untuk mendapatkan informasi terbaru dan penawaran spesial.</p>
+                    <div class="mt-4 flex">
+                        <input type="email" placeholder="Alamat Email" class="px-4 py-2 w-full rounded-l-lg text-gray-900 focus:outline-none">
+                        <button class="bg-secondary text-gray-900 px-4 py-2 rounded-r-lg font-medium hover:opacity-90">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2025 Tenun Nusantara. Seluruh hak cipta dilindungi.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-secondary transition-all">Syarat & Ketentuan</a>
+                    <a href="#" class="hover:text-secondary transition-all">Kebijakan Privasi</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('.md\\:hidden');
+            const navLinks = document.querySelector('.hidden.md\\:flex');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                navLinks.classList.toggle('hidden');
+                navLinks.classList.toggle('flex');
+                navLinks.classList.toggle('flex-col');
+                navLinks.classList.toggle('absolute');
+                navLinks.classList.toggle('top-20');
+                navLinks.classList.toggle('left-0');
+                navLinks.classList.toggle('right-0');
+                navLinks.classList.toggle('bg-white');
+                navLinks.classList.toggle('px-6');
+                navLinks.classList.toggle('py-4');
+                navLinks.classList.toggle('shadow-md');
+                navLinks.classList.toggle('space-x-8');
+                navLinks.classList.toggle('space-y-4');
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu if open
+                        if (!navLinks.classList.contains('hidden')) {
+                            navLinks.classList.add('hidden');
+                            navLinks.classList.remove('flex', 'flex-col', 'absolute', 'top-20', 'left-0', 'right-0', 
+                                'bg-white', 'px-6', 'py-4', 'shadow-md', 'space-y-4');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
